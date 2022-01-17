@@ -1,21 +1,28 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.4;
 
- 
- /// @title A token tracker that limits the token supply and increments token IDs on each new mint.
+import '@openzeppelin/contracts/utils/Counters.sol';
+
+/// @author 1001.digital - edit mhjey - edit
+/// @title A token tracker that limits the token supply and increments token IDs on each new mint.
 abstract contract WithLimitedSupply {
- 
+    using Counters for Counters.Counter;
+
     // Keeps track of how many we have minted
-    uint256 private _tokenCount;
+    Counters.Counter private _tokenCount;
 
     /// @dev The maximum count of tokens this token tracker will hold.
     uint256 private immutable _maxSupply;
 
-    modifier isWithinCapLimit(uint256 _numberOfERC20s) virtual {
-        require((tokenCount() + _numberOfERC20s) <= _maxSupply, 'Purchase exceeds max supply');
+    modifier isWithinCapLimit(uint256 tokenAmount) virtual {
+        require((tokenCount() + tokenAmount) <= _maxSupply, 'Purchase exceeds max supply');
         _;
     }
-
+    /// @dev Check whether another token is still available
+    modifier ensureAvailability() {
+        require(availableTokenCount() > 0, 'No more tokens available');
+        _;
+    }
 
     /// @param amount Check whether number of tokens are still available
     /// @dev Check whether tokens are still available
@@ -25,9 +32,9 @@ abstract contract WithLimitedSupply {
     }
 
     /// Instanciate the contract
-    /// @param maxSupply_ how many tokens this collection should hold
-    constructor(uint256 maxSupply_) {
-        _maxSupply = maxSupply_;
+    /// @param totalSupply_ how many tokens this collection should hold
+    constructor(uint256 totalSupply_) {
+        _maxSupply = totalSupply_;
     }
 
     /// @dev Get the max Supply
@@ -39,7 +46,7 @@ abstract contract WithLimitedSupply {
     /// @dev Get the current token count
     /// @return the created token count
     function tokenCount() public view returns (uint256) {
-        return _tokenCount;
+        return _tokenCount.current();
     }
 
     /// @dev Check whether tokens are still available
@@ -50,10 +57,11 @@ abstract contract WithLimitedSupply {
 
     /// @dev Increment the token count and fetch the latest count
     /// @return the next token id
-    function _increase(uint256 amount) internal virtual ensureAvailabilityFor(amount) returns (uint256) {
- 
-        _tokenCount+=amount;
+    function nextToken() internal virtual ensureAvailability returns (uint256) {
+        uint256 token = _tokenCount.current();
 
-        return _tokenCount;
+        _tokenCount.increment();
+
+        return token;
     }
 }
