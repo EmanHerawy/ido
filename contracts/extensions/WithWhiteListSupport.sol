@@ -13,7 +13,7 @@ abstract contract WithWhiteListSupport {
 
     /// @dev to be override by the child contract to add access control modifier
     function _toggleWhiteListStatus() internal virtual {
-           _whiteListEnabled = !_whiteListEnabled;
+        _whiteListEnabled = !_whiteListEnabled;
     }
 
     /// @dev to be override by the child contract to add access control modifier

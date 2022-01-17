@@ -109,7 +109,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
             if (
                 _userPools[proofIndexes[index]].reservedToIDO == false &&
                 _userPools[proofIndexes[index]].amount > 0 &&
-                _userPools[proofIndexes[index]].registerBlock + lockDuration <= block.timestamp 
+                _userPools[proofIndexes[index]].registerBlock + lockDuration <= block.timestamp
             ) {
                 reservAmount += _userPools[proofIndexes[index]].amount;
                 _userPools[proofIndexes[index]].reservedToIDO = true;
@@ -117,7 +117,6 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         }
     }
 
-  
     function _safeTokenTransfer(address to, uint256 amount) private returns (bool) {
         return IERC20(stfiToken).transfer(to, amount);
     }
@@ -132,7 +131,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
             if (withdrawnAmount > 0) {
                 require(
                     _userPools[proofIndexes[index]].amount > 0 &&
-                                    _userPools[proofIndexes[index]].registerBlock + lockDuration <= block.timestamp 
+                        _userPools[proofIndexes[index]].registerBlock + lockDuration <= block.timestamp
                 );
 
                 if (withdrawnAmount >= _userPools[proofIndexes[index]].amount) {

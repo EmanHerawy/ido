@@ -21,17 +21,24 @@ import './extensions/WithMintedERC20.sol';
 import './extensions/WithWhiteListSupport.sol';
 import './interface/IStartFiStakes.sol';
 
-contract StartfiIDO is WithMintedERC20,WithWhiteListSupport, WithLimitedSupply, WithStartTime, PausableERC20, WithTokenPayment {
+contract StartfiIDO is
+    WithMintedERC20,
+    WithWhiteListSupport,
+    WithLimitedSupply,
+    WithStartTime,
+    PausableERC20,
+    WithTokenPayment
+{
     /**************************libraries ********** */
     using Strings for uint256;
     /***************************Declarations go here ********** */
     IStartFiStakes stakes;
-    uint256 level1 = 5000 * 1 ether;
-    uint256 level2 = 10000 * 1 ether;
-    uint256 level3 = 20000 * 1 ether;
+    uint256 level1 = 2700 * 1 ether;
+    uint256 level2 = 7000 * 1 ether;
+    uint256 level3 = 14000 * 1 ether;
     uint256 level1Max = 500000 * 1 ether;
-    uint256 level2Max = 100000 * 1 ether;
-    uint256 level3Max = 200000 * 1 ether;
+    uint256 level2Max = level1Max*3;
+    uint256 level3Max = level1Max*6;
 
     // modifier
     /******************************************* constructor goes here ********************************************************* */
@@ -70,15 +77,15 @@ contract StartfiIDO is WithMintedERC20,WithWhiteListSupport, WithLimitedSupply, 
         isSaleStarted
         isWithinCapLimit(_amount)
     {
-        if(whilteListStatus()){
-            require(isWhiteListed(_msgSender()),"Must be white listed");
+        if (whilteListStatus()) {
+            require(isWhiteListed(_msgSender()), 'Must be white listed');
         }
         // get max amount user can buy
         require(_amount > 0, 'invalid_amount');
         uint256 tokenAmount;
         uint256 totalStakesForGivenIndexes = stakes.ValidateStakes(_msgSender(), proofIndexes);
-       require(totalStakesForGivenIndexes>0,"No Participation with zero stakes");
-        if (totalStakesForGivenIndexes <= level1 ) {
+        require(totalStakesForGivenIndexes > 0, 'No Participation with zero stakes');
+        if (totalStakesForGivenIndexes <= level1) {
             tokenAmount = _amount > level1Max ? level1Max : _amount;
         } else if (totalStakesForGivenIndexes <= level2) {
             tokenAmount = _amount > level2Max ? level2Max : _amount;
@@ -110,9 +117,11 @@ contract StartfiIDO is WithMintedERC20,WithWhiteListSupport, WithLimitedSupply, 
     function withdraw() external onlyOwner {
         _withdraw();
     }
+
     function toggleWhiteListStatus() external onlyOwner {
         _toggleWhiteListStatus();
     }
+
     function setWhiteList(address[] memory _list) external onlyOwner {
         _setWhiteList(_list);
     }
