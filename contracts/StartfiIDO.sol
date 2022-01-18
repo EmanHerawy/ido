@@ -33,12 +33,13 @@ contract StartfiIDO is
     using Strings for uint256;
     /***************************Declarations go here ********** */
     IStartFiStakes stakes;
-    uint256 level1 = 2700 * 1 ether;
-    uint256 level2 = 7000 * 1 ether;
-    uint256 level3 = 14000 * 1 ether;
-    uint256 level1Max = 500000 * 1 ether;
-    uint256 level2Max = level1Max * 3;
-    uint256 level3Max = level1Max * 6;
+    uint256 private _baseAllocation = 500000 * 1 ether;
+    uint256 _level1 = 2700 * 1 ether;
+    uint256 _level2 = 7000 * 1 ether;
+    uint256 _level3 = 14000 * 1 ether;
+    uint256 _level1Max = _baseAllocation * 1;
+    uint256 _level2Max = _baseAllocation * 3;
+    uint256 _level3Max = _baseAllocation * 6;
 
     // modifier
     /******************************************* constructor goes here ********************************************************* */
@@ -85,12 +86,12 @@ contract StartfiIDO is
         uint256 tokenAmount;
         uint256 totalStakesForGivenIndexes = stakes.validateStakes(_msgSender(), proofIndexes);
         require(totalStakesForGivenIndexes > 0, 'No Participation with zero stakes');
-        if (totalStakesForGivenIndexes <= level1) {
-            tokenAmount = _amount > level1Max ? level1Max : _amount;
-        } else if (totalStakesForGivenIndexes <= level2) {
-            tokenAmount = _amount > level2Max ? level2Max : _amount;
+        if (totalStakesForGivenIndexes <= _level1) {
+            tokenAmount = _amount > _level1Max ? _level1Max : _amount;
+        } else if (totalStakesForGivenIndexes <= _level2) {
+            tokenAmount = _amount > _level2Max ? _level2Max : _amount;
         } else {
-            tokenAmount = _amount > level3Max ? level3Max : _amount;
+            tokenAmount = _amount > _level3Max ? _level3Max : _amount;
         }
         uint256 _price = mintPrice() * tokenAmount;
         require(tokenAmount <= _balance(), 'Insufficient contract balance');
@@ -104,6 +105,11 @@ contract StartfiIDO is
     /// @param _startTime new _startTime
     function updateSaleStartTime(uint256 _startTime) external onlyOwner isSaleNotStarted {
         _setSaleStartTime(_startTime);
+    }
+
+    function update_levelsAllocation(uint256 baseAllocation_) external onlyOwner whenPaused {
+        require(baseAllocation_ != 0, 'Zero value is not accepted');
+        _baseAllocation = baseAllocation_;
     }
 
     function setMintPrice(uint256 price_) external onlyOwner whenPaused {
@@ -124,5 +130,21 @@ contract StartfiIDO is
 
     function setWhiteList(address[] memory _list) external onlyOwner {
         _setWhiteList(_list);
+    }
+
+    function baseAllocation() external view returns (uint256) {
+        return _baseAllocation;
+    }
+
+    function level1() external view returns (uint256, uint256) {
+        return (_level1, _level1Max);
+    }
+
+    function level2() external view returns (uint256, uint256) {
+        return (_level2, _level2Max);
+    }
+
+    function level3() external view returns (uint256, uint256) {
+        return (_level3, _level3Max);
     }
 }

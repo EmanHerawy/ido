@@ -53,6 +53,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         address _owner,
         uint256 lockDuration_
     ) {
+        require(token_ != address(0) && lockDuration_ != 0, 'Zero values are not allowes');
         _stakingToken = token_;
         _lockDuration = lockDuration_;
         _setupRole(DEFAULT_ADMIN_ROLE, _owner);
@@ -158,7 +159,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         uint256 withdrawnAmount;
         for (uint256 index = 0; index < proofIndexes.length; index++) {
             withdrawnAmount += _userPools[proofIndexes[index]].amount;
-             _userPools[proofIndexes[index]].amount = 0;
+            _userPools[proofIndexes[index]].amount = 0;
         }
         _safeTokenTransfer(_msgSender(), withdrawnAmount);
         stakerTotalStakes[_msgSender()] = stakerTotalStakes[_msgSender()] - withdrawnAmount;
@@ -167,7 +168,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
     }
 
     function updateLockDuration(uint256 _duration) external onlyOwner whenPaused {
-        require(_duration > 1 days,"Lock time must not be less than a day");
+        require(_duration > 1 days, 'Lock time must not be less than a day');
         _lockDuration = _duration;
         emit ChangeLockDuration(_duration);
     }
