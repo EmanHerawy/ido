@@ -17,12 +17,11 @@ import './extensions/WithLimitedSupply.sol';
 import './extensions/WithTokenPayment.sol';
 import './extensions/WithStartTime.sol';
 import './extensions/PausableERC20.sol';
-import './extensions/WithMintedERC20.sol';
-import './extensions/WithWhiteListSupport.sol';
+ import './extensions/WithWhiteListSupport.sol';
 import './interface/IStartFiStakes.sol';
 
-contract StartfiIDO is
-    WithMintedERC20,
+contract AirdropedStartfiIDO is
+    
     WithWhiteListSupport,
     WithLimitedSupply,
     WithStartTime,
@@ -40,6 +39,7 @@ contract StartfiIDO is
     uint256 _level1Max = _baseAllocation * 1;
     uint256 _level2Max = _baseAllocation * 3;
     uint256 _level3Max = _baseAllocation * 6;
+    event AirDropRequested(address beneficiary, uint256 amount, uint256 price);
 
     // modifier
     /******************************************* constructor goes here ********************************************************* */
@@ -49,15 +49,14 @@ contract StartfiIDO is
         uint256 maxSupply_,
         address[] memory wallets_,
         address _paymentToken,
-        address _token,
-        address staking,
+         address staking,
         address owner_
     )
         WithLimitedSupply(maxSupply_)
         WithTokenPayment(wallets_, _paymentToken, mintPrice_)
         PausableERC20(owner_)
         WithStartTime(startTimeSale_)
-        WithMintedERC20(_token)
+       
     {
         stakes = IStartFiStakes(staking);
     }
@@ -94,11 +93,11 @@ contract StartfiIDO is
             tokenAmount = _amount > _level3Max ? _level3Max : _amount;
         }
         uint256 _price = mintPrice() * tokenAmount;
-        require(tokenAmount <= _balance(), 'Insufficient contract balance');
+        require(tokenAmount <= availableTokenCount(), 'Insufficient contract balance');
         require(_price <= _getAllowance(_msgSender()), 'Insufficient price value');
         require(_transferPayment(_msgSender(), _price), 'Payment failed');
-        _increase(tokenAmount);
-        require(_transferToken(_msgSender(), tokenAmount), 'transfer token failed');
+         _increase(tokenAmount);
+        emit AirDropRequested(_msgSender(), tokenAmount, _price);
     }
 
     /// @notice Only owner can call it

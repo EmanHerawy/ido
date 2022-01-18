@@ -9,13 +9,13 @@ abstract contract WithLimitedSupply {
     using Counters for Counters.Counter;
 
     // Keeps track of how many we have minted
-    Counters.Counter private _tokenCount;
+    uint256 private _tokenCount;
 
     /// @dev The maximum count of tokens this token tracker will hold.
     uint256 private immutable _maxSupply;
 
     modifier isWithinCapLimit(uint256 tokenAmount) virtual {
-        require((tokenCount() + tokenAmount) <= _maxSupply, 'Purchase exceeds max supply');
+        require((_tokenCount + tokenAmount) <= _maxSupply, 'Purchase exceeds max supply');
         _;
     }
     /// @dev Check whether another token is still available
@@ -46,7 +46,7 @@ abstract contract WithLimitedSupply {
     /// @dev Get the current token count
     /// @return the created token count
     function tokenCount() public view returns (uint256) {
-        return _tokenCount.current();
+        return _tokenCount;
     }
 
     /// @dev Check whether tokens are still available
@@ -55,13 +55,12 @@ abstract contract WithLimitedSupply {
         return maxSupply() - tokenCount();
     }
 
-    /// @dev Increment the token count and fetch the latest count
+
+      /// @dev Increment the token count and fetch the latest count
     /// @return the next token id
-    function nextToken() internal virtual ensureAvailability returns (uint256) {
-        uint256 token = _tokenCount.current();
+    function _increase(uint256 amount) internal virtual ensureAvailabilityFor(amount) returns (uint256) {
+        _tokenCount += amount;
 
-        _tokenCount.increment();
-
-        return token;
+        return _tokenCount;
     }
 }

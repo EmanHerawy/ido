@@ -24,7 +24,10 @@ const _lockDuration = 60 * 60 * 24
 describe('StartfiIDO', () => {
   const [wallet, other, user1, user2, user3] = provider.getWallets()
   const loadFixture = createFixtureLoader([wallet, other, user1, user2, user3])
-
+ const whitelist = ["0xa797167f70aC0f9FFF23b628f14cd6a728500FF1",
+    "0x0DF35aCfB9a204Ee32d5A9D57Aa3a06d391eBd4a",
+    "0x7e33ca6d5fe6a06ae484E81262ACB74919Dc25fb",
+    "0x246E6F3aB039A9510F811bf2B6916C325703B141", wallet.address, other.address];
   let idoToken: Contract
   let paymentToken: Contract
   let IDO: Contract
@@ -46,6 +49,8 @@ describe('StartfiIDO', () => {
       Stakes.address,
       wallet.address,
     ])
+        await IDO.setWhiteList(whitelist);
+
     // transfer tokens 
 
     await idoToken.transfer(IDO.address,_maxSupply)
@@ -129,6 +134,9 @@ describe('StartfiIDO', () => {
     await paymentToken.approve(IDO.address, parseEther((nftTestAmount * +_mintPrice).toString()))
  
     await expect(await IDO.mint(nftTestAmount, proofIndexes)).to.emit(idoToken, 'Transfer')
+    const ava = await IDO.availableTokenCount();
+    console.log({ava});
+    
   })
 
   it('Non Owner Should not call withdraw', async () => {

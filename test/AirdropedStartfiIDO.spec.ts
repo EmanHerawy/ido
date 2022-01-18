@@ -8,7 +8,7 @@ const { solidity, deployContract, createFixtureLoader, provider } = waffle
 import { tokenFixture } from './shared/fixtures'
 import { expandTo18Decimals } from './shared/utilities'
 
-import StartfiIDO from '../artifacts/contracts/StartfiIDO.sol/StartfiIDO.json'
+import StartfiIDO from '../artifacts/contracts/AirdropedStartfiIDO.sol/AirdropedStartfiIDO.json'
 import StartFiStakes from '../artifacts/contracts/StartFiStakes.sol/StartFiStakes.json'
 import { parseEther } from 'ethers/lib/utils'
 chai.use(solidity)
@@ -21,10 +21,10 @@ const _wallets = ['0x2819C6d61e4c83bc53dD17D4aa00deDBe35894AA']
 const _mintPrice = parseEther((1).toString()).toString()
 let proofIndexes:any = []
 const _lockDuration = 60 * 60 * 24
-describe('StartfiIDO', () => {
+describe('AirdropedStartfiIDO', () => {
   const [wallet, other, user1, user2, user3] = provider.getWallets()
   const loadFixture = createFixtureLoader([wallet, other, user1, user2, user3])
- const whitelist = ["0xa797167f70aC0f9FFF23b628f14cd6a728500FF1",
+  const whitelist = ["0xa797167f70aC0f9FFF23b628f14cd6a728500FF1",
     "0x0DF35aCfB9a204Ee32d5A9D57Aa3a06d391eBd4a",
     "0x7e33ca6d5fe6a06ae484E81262ACB74919Dc25fb",
     "0x246E6F3aB039A9510F811bf2B6916C325703B141", wallet.address, other.address];
@@ -45,19 +45,16 @@ describe('StartfiIDO', () => {
       _maxSupply,
       _wallets,
       paymentToken.address,
-      idoToken.address,
-      Stakes.address,
+       Stakes.address,
       wallet.address,
     ])
-        await IDO.setWhiteList(whitelist);
-
+    await IDO.setWhiteList(whitelist);
     // transfer tokens 
 
-    await idoToken.transfer(IDO.address,_maxSupply)
-  })
+   })
 
   it('name, symbol,  wallets,mintPrice,maxToMintPerAddress,maxSupply,reserved', async () => {
-    expect(await IDO.maxSupply()).to.eq(await idoToken.balanceOf(IDO.address))
+    expect(await IDO.maxSupply()).to.eq(_maxSupply)
   })
 
   it('Should not mint if the sale is not started', async () => {
@@ -117,7 +114,7 @@ describe('StartfiIDO', () => {
   it('Should  mint', async () => {
     await paymentToken.approve(IDO.address, parseEther((nftTestAmount * +_mintPrice).toString()))
  
-    await expect(await IDO.mint(nftTestAmount, proofIndexes)).to.emit(idoToken, 'Transfer')
+    await expect(await IDO.mint(nftTestAmount, proofIndexes)).to.emit(IDO, 'AirDropRequested')
   })
 
   it('Non Owner Should not call withdraw', async () => {
