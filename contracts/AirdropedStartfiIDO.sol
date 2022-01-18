@@ -17,11 +17,10 @@ import './extensions/WithLimitedSupply.sol';
 import './extensions/WithTokenPayment.sol';
 import './extensions/WithStartTime.sol';
 import './extensions/PausableERC20.sol';
- import './extensions/WithWhiteListSupport.sol';
+import './extensions/WithWhiteListSupport.sol';
 import './interface/IStartFiStakes.sol';
 
 contract AirdropedStartfiIDO is
-    
     WithWhiteListSupport,
     WithLimitedSupply,
     WithStartTime,
@@ -49,14 +48,13 @@ contract AirdropedStartfiIDO is
         uint256 maxSupply_,
         address[] memory wallets_,
         address _paymentToken,
-         address staking,
+        address staking,
         address owner_
     )
         WithLimitedSupply(maxSupply_)
         WithTokenPayment(wallets_, _paymentToken, mintPrice_)
         PausableERC20(owner_)
         WithStartTime(startTimeSale_)
-       
     {
         stakes = IStartFiStakes(staking);
     }
@@ -96,7 +94,7 @@ contract AirdropedStartfiIDO is
         require(tokenAmount <= availableTokenCount(), 'Insufficient contract balance');
         require(_price <= _getAllowance(_msgSender()), 'Insufficient price value');
         require(_transferPayment(_msgSender(), _price), 'Payment failed');
-         _increase(tokenAmount);
+        _increase(tokenAmount);
         emit AirDropRequested(_msgSender(), tokenAmount, _price);
     }
 

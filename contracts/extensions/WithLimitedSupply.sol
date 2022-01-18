@@ -55,8 +55,7 @@ abstract contract WithLimitedSupply {
         return maxSupply() - tokenCount();
     }
 
-
-      /// @dev Increment the token count and fetch the latest count
+    /// @dev Increment the token count and fetch the latest count
     /// @return the next token id
     function _increase(uint256 amount) internal virtual ensureAvailabilityFor(amount) returns (uint256) {
         _tokenCount += amount;
