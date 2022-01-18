@@ -5,7 +5,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deploy } = deployments
   const { deployer } = await getNamedAccounts()
   const _maxSupply = 8888
-  const dayinSec = 60 * 60 * 24;
+  const dayinSec = 60 //* 60 * 24;
   const _lockDuration = dayinSec*7 // 7 days
   const _wallets = ['0x2819C6d61e4c83bc53dD17D4aa00deDBe35894AA']
   const _mintPrice = parseEther((0.0001).toString())

@@ -37,8 +37,8 @@ contract StartfiIDO is
     uint256 level2 = 7000 * 1 ether;
     uint256 level3 = 14000 * 1 ether;
     uint256 level1Max = 500000 * 1 ether;
-    uint256 level2Max = level1Max*3;
-    uint256 level3Max = level1Max*6;
+    uint256 level2Max = level1Max * 3;
+    uint256 level3Max = level1Max * 6;
 
     // modifier
     /******************************************* constructor goes here ********************************************************* */

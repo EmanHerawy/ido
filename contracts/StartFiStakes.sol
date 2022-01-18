@@ -174,6 +174,24 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         return stakerTotalStakes[_owner];
     }
 
+    function getUserPoolLenght(address _owner) external view returns (uint256) {
+        return stakerPools[_owner].length;
+    }
+
+    function getUserPoolDetails(address _owner, uint256 index)
+        external
+        view
+        returns (
+            uint256 amount,
+            bool locked,
+            bool reservedToIDO
+        )
+    {
+        amount = stakerPools[_owner][index].amount;
+        locked = stakerPools[_owner][index].registerBlock + lockDuration <= block.timestamp;
+        reservedToIDO = stakerPools[_owner][index].reservedToIDO;
+    }
+
     function _getAllowance(address _owner) private view returns (uint256) {
         return IERC20(stfiToken).allowance(_owner, address(this));
     }
