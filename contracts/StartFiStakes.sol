@@ -24,7 +24,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         uint256 registerBlock;
         bool reservedToIDO;
     }
-    uint256 lockDuration;
+    uint256 _lockDuration;
     mapping(address => uint256) stakerTotalStakes;
     mapping(address => userPools[]) stakerPools;
     address stfiToken;
@@ -50,10 +50,10 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
     constructor(
         address _stfiToken,
         address _owner,
-        uint256 _lockDuration
+        uint256 lockDuration_
     ) {
         stfiToken = _stfiToken;
-        lockDuration = _lockDuration;
+        _lockDuration = lockDuration_;
         _setupRole(DEFAULT_ADMIN_ROLE, _owner);
 
         _setupRole(OWNER_ROLE, _owner);
@@ -109,7 +109,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
             if (
                 _userPools[proofIndexes[index]].reservedToIDO == false &&
                 _userPools[proofIndexes[index]].amount > 0 &&
-                _userPools[proofIndexes[index]].registerBlock + lockDuration <= block.timestamp
+                _userPools[proofIndexes[index]].registerBlock + _lockDuration <= block.timestamp
             ) {
                 reservAmount += _userPools[proofIndexes[index]].amount;
                 _userPools[proofIndexes[index]].reservedToIDO = true;
@@ -131,7 +131,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
             if (withdrawnAmount > 0) {
                 require(
                     _userPools[proofIndexes[index]].amount > 0 &&
-                        _userPools[proofIndexes[index]].registerBlock + lockDuration <= block.timestamp
+                        _userPools[proofIndexes[index]].registerBlock + _lockDuration <= block.timestamp
                 );
 
                 if (withdrawnAmount >= _userPools[proofIndexes[index]].amount) {
@@ -165,7 +165,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
 
     function updateLockDuration(uint256 _duration) external onlyOwner whenPaused {
         require(_duration > 1 days);
-        lockDuration = _duration;
+        _lockDuration = _duration;
         emit ChangeLockDuration(_duration);
     }
 
@@ -188,7 +188,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         )
     {
         amount = stakerPools[_user][index].amount;
-        locked = stakerPools[_user][index].registerBlock + lockDuration <= block.timestamp;
+        locked = stakerPools[_user][index].registerBlock + _lockDuration <= block.timestamp;
         reservedToIDO = stakerPools[_user][index].reservedToIDO;
     }
 
