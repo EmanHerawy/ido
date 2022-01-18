@@ -174,11 +174,11 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         return stakerTotalStakes[_owner];
     }
 
-    function getUserPoolLenght(address _owner) external view returns (uint256) {
-        return stakerPools[_owner].length;
+    function getUserPoolLenght(address _user) external view returns (uint256) {
+        return stakerPools[_user].length;
     }
 
-    function getUserPoolDetails(address _owner, uint256 index)
+    function getUserPoolDetails(address _user, uint256 index)
         external
         view
         returns (
@@ -187,9 +187,9 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
             bool reservedToIDO
         )
     {
-        amount = stakerPools[_owner][index].amount;
-        locked = stakerPools[_owner][index].registerBlock + lockDuration <= block.timestamp;
-        reservedToIDO = stakerPools[_owner][index].reservedToIDO;
+        amount = stakerPools[_user][index].amount;
+        locked = stakerPools[_user][index].registerBlock + lockDuration <= block.timestamp;
+        reservedToIDO = stakerPools[_user][index].reservedToIDO;
     }
 
     function _getAllowance(address _owner) private view returns (uint256) {
