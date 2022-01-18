@@ -83,7 +83,7 @@ contract StartfiIDO is
         // get max amount user can buy
         require(_amount > 0, 'invalid_amount');
         uint256 tokenAmount;
-        uint256 totalStakesForGivenIndexes = stakes.ValidateStakes(_msgSender(), proofIndexes);
+        uint256 totalStakesForGivenIndexes = stakes.validateStakes(_msgSender(), proofIndexes);
         require(totalStakesForGivenIndexes > 0, 'No Participation with zero stakes');
         if (totalStakesForGivenIndexes <= level1) {
             tokenAmount = _amount > level1Max ? level1Max : _amount;

@@ -21,7 +21,7 @@ interface IStartFiStakes {
     // deposit
     function deposit(address user, uint256 amount) external;
 
-    function ValidateStakes(address user, uint256[] calldata proofIndexes) external returns (uint256 reservAmount);
+    function validateStakes(address user, uint256[] calldata proofIndexes) external returns (uint256 reservAmount);
 
     // withdraw
     function withdraw(uint256 amount, uint256[] calldata proofIndexes) external;

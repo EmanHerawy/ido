@@ -16,6 +16,8 @@ import '@openzeppelin/contracts/access/AccessControlEnumerable.sol';
 
 contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
     /******************************************* decalrations go here ********************************************************* */
+    uint256 private _lockDuration;
+    address private _stakingToken;
     bytes32 public constant IDO_ROLE = keccak256('IDO_ROLE');
     bytes32 public constant OWNER_ROLE = keccak256('OWNER_ROLE');
 
@@ -24,10 +26,9 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         uint256 registerBlock;
         bool reservedToIDO;
     }
-    uint256 _lockDuration;
+
     mapping(address => uint256) stakerTotalStakes;
     mapping(address => userPools[]) stakerPools;
-    address stfiToken;
     /******************************************* modifiers go here ********************************************************* */
     modifier onlyIDO() {
         require(hasRole(IDO_ROLE, _msgSender()), 'caller is not IDO');
@@ -48,11 +49,11 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
     /******************************************* constructor goes here ********************************************************* */
 
     constructor(
-        address _stfiToken,
+        address token_,
         address _owner,
         uint256 lockDuration_
     ) {
-        stfiToken = _stfiToken;
+        _stakingToken = token_;
         _lockDuration = lockDuration_;
         _setupRole(DEFAULT_ADMIN_ROLE, _owner);
 
@@ -90,14 +91,14 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
     // deposit
     function deposit(address user, uint256 amount) external whenNotPaused nonReentrant {
         require(_getAllowance(_msgSender()) >= amount, 'Invalid amount');
-        IERC20(stfiToken).transferFrom(_msgSender(), address(this), amount);
+        IERC20(_stakingToken).transferFrom(_msgSender(), address(this), amount);
         stakerPools[user].push(userPools(amount, block.timestamp, false));
         stakerTotalStakes[user] += amount;
         // stakerFree[user] += amount;
         emit DepositFunds(user, amount);
     }
 
-    function ValidateStakes(address user, uint256[] calldata proofIndexes)
+    function validateStakes(address user, uint256[] calldata proofIndexes)
         external
         onlyIDO
         whenNotPaused
@@ -118,7 +119,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
     }
 
     function _safeTokenTransfer(address to, uint256 amount) private returns (bool) {
-        return IERC20(stfiToken).transfer(to, amount);
+        return IERC20(_stakingToken).transfer(to, amount);
     }
 
     // withdraw
@@ -131,7 +132,8 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
             if (withdrawnAmount > 0) {
                 require(
                     _userPools[proofIndexes[index]].amount > 0 &&
-                        _userPools[proofIndexes[index]].registerBlock + _lockDuration <= block.timestamp
+                        _userPools[proofIndexes[index]].registerBlock + _lockDuration <= block.timestamp,
+                    'fund is locked or already released'
                 );
 
                 if (withdrawnAmount >= _userPools[proofIndexes[index]].amount) {
@@ -156,6 +158,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         uint256 withdrawnAmount;
         for (uint256 index = 0; index < proofIndexes.length; index++) {
             withdrawnAmount += _userPools[proofIndexes[index]].amount;
+             _userPools[proofIndexes[index]].amount = 0;
         }
         _safeTokenTransfer(_msgSender(), withdrawnAmount);
         stakerTotalStakes[_msgSender()] = stakerTotalStakes[_msgSender()] - withdrawnAmount;
@@ -164,7 +167,7 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
     }
 
     function updateLockDuration(uint256 _duration) external onlyOwner whenPaused {
-        require(_duration > 1 days);
+        require(_duration > 1 days,"Lock time must not be less than a day");
         _lockDuration = _duration;
         emit ChangeLockDuration(_duration);
     }
@@ -178,21 +181,29 @@ contract StartFiStakes is Pausable, ReentrancyGuard, AccessControlEnumerable {
         return stakerPools[_user].length;
     }
 
+    function lockDuration() external view returns (uint256) {
+        return _lockDuration;
+    }
+
+    function stakingToken() external view returns (address) {
+        return _stakingToken;
+    }
+
     function getUserPoolDetails(address _user, uint256 index)
         external
         view
         returns (
             uint256 amount,
-            bool locked,
+            bool unlocked,
             bool reservedToIDO
         )
     {
         amount = stakerPools[_user][index].amount;
-        locked = stakerPools[_user][index].registerBlock + _lockDuration <= block.timestamp;
+        unlocked = stakerPools[_user][index].registerBlock + _lockDuration <= block.timestamp;
         reservedToIDO = stakerPools[_user][index].reservedToIDO;
     }
 
     function _getAllowance(address _owner) private view returns (uint256) {
-        return IERC20(stfiToken).allowance(_owner, address(this));
+        return IERC20(_stakingToken).allowance(_owner, address(this));
     }
 }
