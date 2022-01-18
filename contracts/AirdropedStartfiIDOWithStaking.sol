@@ -127,27 +127,24 @@ contract AirdropedStartfiIDOWithStaking is
 
     // deposit
     function deposit(uint256 amount) external whenNotPaused {
-        require(amount>=_level1,"Amount is less the minumum");
+        require(amount >= _level1, 'Amount is less the minumum');
         _deposit(_msgSender(), amount);
     }
 
     // withdraw
-    function unstake( uint256 amount) external whenNotPaused {
+    function unstake(uint256 amount) external whenNotPaused {
         require(isUnLockedFund(_msgSender()), 'Fund is locked now');
-        _unstake(_msgSender(),amount);
+        _unstake(_msgSender(), amount);
     }
 
     function unstakeBatch(address[] memory users) external onlyOwner {
         for (uint256 index = 0; index < users.length; index++) {
             require(users[index] != address(0), 'Zero Address is not allowed');
-                    _unstake(users[index],getReserves(users[index]));
-
+            _unstake(users[index], getReserves(users[index]));
         }
-     }
-
-    function emergencyUnstake(uint256 amount) external whenPaused {
-        _unstake(_msgSender(),amount);
     }
 
-   
+    function emergencyUnstake(uint256 amount) external whenPaused {
+        _unstake(_msgSender(), amount);
+    }
 }

@@ -29,10 +29,7 @@ contract WithStakingPool is ReentrancyGuard {
 
     /******************************************* constructor goes here ********************************************************* */
 
-    constructor(
-        address token_,
-        uint256 lockDuration_
-    ) {
+    constructor(address token_, uint256 lockDuration_) {
         require(token_ != address(0) && lockDuration_ != 0, 'Zero values are not allowes');
         _stakingToken = token_;
         _lockDuration = lockDuration_;
@@ -87,6 +84,4 @@ contract WithStakingPool is ReentrancyGuard {
     function isUnLockedFund(address user) public view returns (bool) {
         return stakerTimestamp[user] + _lockDuration <= block.timestamp;
     }
-
-   
 }
