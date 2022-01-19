@@ -14,6 +14,7 @@ chai.use(solidity)
 let timestampBefore = 0
 const _maxSupply = parseEther('50000')
 const nftTestAmount = parseEther('2700')
+const base = parseEther('41')
 const _startTimeSale = 0
 const _wallets = ['0x2819C6d61e4c83bc53dD17D4aa00deDBe35894AA']
 const _mintPrice = parseEther('0.00567')
@@ -67,7 +68,7 @@ describe('AirdropedStartfiIDOWithStaking', () => {
 
   it('Should not mint if the sale is not started', async () => {
     await paymentToken.approve(IDO.address, amountPrice)
-    await expect(IDO.mint(nftTestAmount)).to.revertedWith('Sale did not start yet')
+    await expect(IDO.mint()).to.revertedWith('Sale did not start yet')
   })
 
   it('Non Owner Should not update sale start time', async () => {
@@ -85,7 +86,7 @@ describe('AirdropedStartfiIDOWithStaking', () => {
 
   it('Should not mint if the user does not have stakes', async () => {
     await paymentToken.approve(IDO.address, amountPrice)
-    await expect(IDO.mint(nftTestAmount)).to.revertedWith('No Participation with zero stakes')
+    await expect(IDO.mint()).to.revertedWith('No Participation with zero stakes')
   })
   it('user should be able to stake', async () => {
     // create 3 pools
@@ -93,26 +94,12 @@ describe('AirdropedStartfiIDOWithStaking', () => {
     await idoToken.approve(IDO.address, amount)
     await expect(IDO.deposit(amount)).to.emit(IDO, 'DepositFunds')
   })
-  it('Should not mint if the price is less than the minPrice', async () => {
-       await paymentToken.approve(IDO.address, wrongPrice)
 
-    const allowance = await paymentToken.allowance(wallet.address, IDO.address)
-    const balance = await paymentToken.balanceOf(wallet.address)
-    console.log({ allowance, balance, amountPrice }, '**********************')
-    await provider.send('evm_increaseTime', [timestampBefore + 5000000000 + _lockDuration])
-    await provider.send('evm_mine', [])
-   
-    
-    await expect(IDO.mint(nftTestAmount)).to.revertedWith('Insufficient price value')
-    // const mintTxt = await IDO.mint(nftTestAmount.sub(20));
-    // await expect(mintTxt).to.emit(paymentToken,'Transfer').withArgs(wallet.address,IDO.address,amountPrice)
-    // await expect(mintTxt).to.emit(IDO,'AirDropRequested').withArgs(wallet.address,nftTestAmount,amountPrice)
-  })
 
   it('Should  mint', async () => {
     await paymentToken.approve(IDO.address, amountPrice)
 
-    await expect(await IDO.mint(nftTestAmount)).to.emit(IDO, 'AirDropRequested')
+    await expect(await IDO.mint()).to.emit(IDO, 'AirDropRequested')
   })
   it('Should   mint only base allocation if user is on level1', async () => {
     await idoToken.connect(other).approve(IDO.address, nftTestAmount)
@@ -122,10 +109,10 @@ describe('AirdropedStartfiIDOWithStaking', () => {
     const userReserves = await IDO.getReserves(other.address);
     console.log({userReserves});
     
-    await paymentToken.connect(other).approve(IDO.address,  amountPrice2)
+    await paymentToken.connect(other).approve(IDO.address,  base)
     console.log(amountPrice, 'amountPrice')
 
-    await expect(await IDO.connect(other).mint(nftTestAmount.mul(2))).to.emit(IDO,'AirDropRequested').withArgs(wallet.address,nftTestAmount,amountPrice)
+    await expect( IDO.connect(other).mint()).to.revertedWith("allocation exceded")
   })
 
   it('Non Owner Should not call unstake', async () => {
@@ -229,7 +216,7 @@ describe('AirdropedStartfiIDOWithStaking 2 staking', () => {
     await expect(IDO.connect(other).deposit(amount)).to.emit(IDO, 'DepositFunds')
     await idoToken.connect(other).approve(IDO.address, amount)
     await expect(IDO.connect(other).deposit(amount)).to.emit(IDO, 'DepositFunds')
-    await expect(IDO.connect(other).emergencyUnstake(amount)).to.revertedWith('Pausable: not paused')
+    await expect(IDO.connect(other).emergencyUnstake(other.address,amount)).to.revertedWith('Pausable: not paused')
   })
   it('Non Owner Should not call updateLockDuration', async () => {
     const newDuration = 50000
@@ -252,7 +239,7 @@ describe('AirdropedStartfiIDOWithStaking 2 staking', () => {
     const amount = nftTestAmount
 
     const userReserveBefore = await IDO.getReserves(other.address)
-    await expect(IDO.connect(other).emergencyUnstake(amount)).to.emit(IDO, 'WithdrawFunds')
+    await expect(IDO.connect(other).emergencyUnstake(other.address,amount)).to.emit(IDO, 'WithdrawFunds')
     const userReserveAfter = await IDO.getReserves(other.address)
 
     await expect(userReserveBefore).to.not.eq(userReserveAfter)
