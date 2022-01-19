@@ -1,5 +1,5 @@
 'npx hardhat compile --force' running
-Compiling 15 files with 0.8.4
+Compiling 19 files with 0.8.4
 Compiling 21 files with 0.8.7
 Compilation finished successfully
 
@@ -21,14 +21,14 @@ Learn more at https://hardhat.org/reference/solidity-support"
 <s> [webpack.Progress] 10% building 3/7 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-router/dist/vue-router.esm.js
 <s> [webpack.Progress] 10% building 4/7 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-router/dist/vue-router.esm.js
 <s> [webpack.Progress] 10% building 5/7 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-router/dist/vue-router.esm.js
-<s> [webpack.Progress] 10% building 6/7 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/webpack/buildin/global.js
+<s> [webpack.Progress] 10% building 6/7 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-router/dist/vue-router.esm.js
 <s> [webpack.Progress] 10% building 7/7 modules 0 active 
 <s> [webpack.Progress] 10% building 7/8 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/runtime/componentNormalizer.js
-<s> [webpack.Progress] 10% building 7/9 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Contract.vue?vue&type=template&id=642ff8cd&
+<s> [webpack.Progress] 10% building 7/9 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/App.vue?vue&type=template&id=0e59907a&
 <s> [webpack.Progress] 10% building 8/9 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/runtime/componentNormalizer.js
-<s> [webpack.Progress] 10% building 8/10 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Contract.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 10% building 8/10 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Contract.vue?vue&type=template&id=642ff8cd&
 <s> [webpack.Progress] 11% building 9/10 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/runtime/componentNormalizer.js
-<s> [webpack.Progress] 11% building 9/11 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/App.vue?vue&type=template&id=0e59907a&
+<s> [webpack.Progress] 11% building 9/11 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Contract.vue?vue&type=script&lang=js&
 <s> [webpack.Progress] 11% building 10/11 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/runtime/componentNormalizer.js
 <s> [webpack.Progress] 11% building 10/12 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Index.vue?vue&type=template&id=8f0301b2&
 <s> [webpack.Progress] 11% building 11/12 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/runtime/componentNormalizer.js
@@ -53,68 +53,68 @@ Learn more at https://hardhat.org/reference/solidity-support"
 <s> [webpack.Progress] 12% building 18/24 modules 6 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
 <s> [webpack.Progress] 12% building 19/24 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
 <s> [webpack.Progress] 12% building 20/24 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
-<s> [webpack.Progress] 12% building 20/25 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=template&id=1b89dd66&
+<s> [webpack.Progress] 12% building 20/25 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=template&id=450ec9d6&
 <s> [webpack.Progress] 12% building 21/25 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
-<s> [webpack.Progress] 12% building 21/26 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 12% building 21/26 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=script&lang=js&
 <s> [webpack.Progress] 12% building 22/26 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
-<s> [webpack.Progress] 12% building 22/27 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=template&id=1b89dd66&
-<s> [webpack.Progress] 12% building 22/28 modules 6 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=script&lang=js&
-<s> [webpack.Progress] 12% building 23/28 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 12% building 22/27 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=template&id=450ec9d6&
+<s> [webpack.Progress] 12% building 22/28 modules 6 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 12% building 23/28 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=script&lang=js&
 <s> [webpack.Progress] 12% building 24/28 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
 <s> [webpack.Progress] 13% building 25/28 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
-<s> [webpack.Progress] 13% building 25/29 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=template&id=450ec9d6&
+<s> [webpack.Progress] 13% building 25/29 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=template&id=1b89dd66&
 <s> [webpack.Progress] 13% building 26/29 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
-<s> [webpack.Progress] 13% building 26/30 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 13% building 26/30 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=script&lang=js&
 <s> [webpack.Progress] 13% building 27/30 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
-<s> [webpack.Progress] 13% building 27/31 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=template&id=450ec9d6&
-<s> [webpack.Progress] 13% building 27/32 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=script&lang=js&
-<s> [webpack.Progress] 13% building 28/32 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Member.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 13% building 27/31 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=template&id=1b89dd66&
+<s> [webpack.Progress] 13% building 27/32 modules 5 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 13% building 28/32 modules 4 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/FooterBar.vue?vue&type=script&lang=js&
 <s> [webpack.Progress] 13% building 29/32 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
 <s> [webpack.Progress] 13% building 30/32 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
 <s> [webpack.Progress] 13% building 30/33 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/HeaderBar.vue?vue&type=template&id=1937d01b&
 <s> [webpack.Progress] 13% building 31/33 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
 <s> [webpack.Progress] 13% building 31/34 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/HeaderBar.vue?vue&type=template&id=1937d01b&
 <s> [webpack.Progress] 13% building 32/34 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
-<s> [webpack.Progress] 13% building 33/34 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue
-<s> [webpack.Progress] 13% building 33/35 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=template&id=7e10721d&
-<s> [webpack.Progress] 14% building 34/35 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue
-<s> [webpack.Progress] 14% building 34/36 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=script&lang=js&
-<s> [webpack.Progress] 14% building 35/36 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue
-<s> [webpack.Progress] 14% building 35/37 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=template&id=7e10721d&
-<s> [webpack.Progress] 14% building 35/38 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=script&lang=js&
-<s> [webpack.Progress] 14% building 36/38 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=script&lang=js&
-<s> [webpack.Progress] 14% building 37/38 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue
+<s> [webpack.Progress] 13% building 33/34 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
+<s> [webpack.Progress] 13% building 33/35 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=template&id=5e25f03d&
+<s> [webpack.Progress] 14% building 34/35 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
+<s> [webpack.Progress] 14% building 34/36 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 14% building 35/36 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
+<s> [webpack.Progress] 14% building 35/37 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=template&id=5e25f03d&
+<s> [webpack.Progress] 14% building 35/38 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 14% building 36/38 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 14% building 37/38 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue
 <s> [webpack.Progress] 14% building 38/38 modules 0 active 
-<s> [webpack.Progress] 14% building 38/39 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=template&id=5e25f03d&
+<s> [webpack.Progress] 14% building 38/39 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=template&id=7e10721d&
 <s> [webpack.Progress] 14% building 39/39 modules 0 active 
-<s> [webpack.Progress] 14% building 39/40 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 14% building 39/40 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=script&lang=js&
 <s> [webpack.Progress] 14% building 40/40 modules 0 active 
-<s> [webpack.Progress] 14% building 40/41 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=template&id=5e25f03d&
-<s> [webpack.Progress] 14% building 40/42 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=script&lang=js&
-<s> [webpack.Progress] 14% building 41/42 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSet.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 14% building 40/41 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=template&id=7e10721d&
+<s> [webpack.Progress] 14% building 40/42 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 14% building 41/42 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/Branch.vue?vue&type=script&lang=js&
 <s> [webpack.Progress] 15% building 42/42 modules 0 active 
-<s> [webpack.Progress] 15% building 42/43 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/package.json
-<s> [webpack.Progress] 15% building 43/43 modules 0 active 
+<s> [webpack.Progress] 15% building 42/43 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue
+<s> [webpack.Progress] 15% building 42/44 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/package.json
 <s> [webpack.Progress] 15% building 43/44 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue
 <s> [webpack.Progress] 15% building 43/45 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-style-loader/index.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/css-loader/dist/cjs.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/App.vue?vue&type=style&index=0&lang=css&
 <s> [webpack.Progress] 15% building 44/45 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue
-<s> [webpack.Progress] 15% building 45/45 modules 0 active 
-<s> [webpack.Progress] 15% building 45/46 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=template&id=5a904080&
-<s> [webpack.Progress] 15% building 46/46 modules 0 active 
-<s> [webpack.Progress] 15% building 46/47 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 15% building 44/46 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-style-loader/index.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/css-loader/dist/cjs.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/stylePostLoader.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/App.vue?vue&type=style&index=0&lang=css&
+<s> [webpack.Progress] 15% building 45/46 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue
+<s> [webpack.Progress] 15% building 45/47 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/css-loader/dist/cjs.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/stylePostLoader.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/App.vue?vue&type=style&index=0&lang=css&
+<s> [webpack.Progress] 15% building 46/47 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue
 <s> [webpack.Progress] 15% building 47/47 modules 0 active 
-<s> [webpack.Progress] 15% building 47/48 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=template&id=5a904080&
-<s> [webpack.Progress] 15% building 47/49 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=script&lang=js&
-<s> [webpack.Progress] 15% building 48/49 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 15% building 47/48 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=template&id=5a904080&
+<s> [webpack.Progress] 15% building 48/48 modules 0 active 
+<s> [webpack.Progress] 15% building 48/49 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=script&lang=js&
 <s> [webpack.Progress] 15% building 49/49 modules 0 active 
-<s> [webpack.Progress] 15% building 49/50 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-style-loader/index.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/css-loader/dist/cjs.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/stylePostLoader.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/App.vue?vue&type=style&index=0&lang=css&
-<s> [webpack.Progress] 16% building 50/50 modules 0 active 
-<s> [webpack.Progress] 16% building 50/51 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/css-loader/dist/cjs.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/stylePostLoader.js!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/App.vue?vue&type=style&index=0&lang=css&
+<s> [webpack.Progress] 15% building 49/50 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=template&id=5a904080&
+<s> [webpack.Progress] 15% building 49/51 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=script&lang=js&
+<s> [webpack.Progress] 16% building 50/51 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-loader/lib/index.js??vue-loader-options!/media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/hardhat-docgen/src/components/MemberSection.vue?vue&type=script&lang=js&
 <s> [webpack.Progress] 16% building 51/51 modules 0 active 
 <s> [webpack.Progress] 16% building 51/52 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-style-loader/lib/addStylesClient.js
 <s> [webpack.Progress] 16% building 51/53 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/css-loader/dist/runtime/api.js
-<s> [webpack.Progress] 16% building 51/54 modules 3 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/setimmediate/setImmediate.js
-<s> [webpack.Progress] 16% building 52/54 modules 2 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/setimmediate/setImmediate.js
+<s> [webpack.Progress] 16% building 52/53 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/css-loader/dist/runtime/api.js
+<s> [webpack.Progress] 16% building 53/53 modules 0 active 
 <s> [webpack.Progress] 16% building 53/54 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/setimmediate/setImmediate.js
 <s> [webpack.Progress] 16% building 54/54 modules 0 active 
 <s> [webpack.Progress] 16% building 54/55 modules 1 active /media/emanherawy/a2924234-8318-47b1-8e1c-b4c83bba4734/work/startfi/startfi-ido/node_modules/vue-style-loader/lib/listToStyles.js
@@ -202,6 +202,7 @@ Learn more at https://hardhat.org/reference/solidity-support"
 
 INFO:Detectors:[91m
 StartFiStakes.deposit(address,uint256) (contracts/StartFiStakes.sol#93-100) ignores return value by IERC20(_stakingToken).transferFrom(_msgSender(),address(this),amount) (contracts/StartFiStakes.sol#95)
+WithStakingPool._deposit(address,uint256) (contracts/extensions/WithStakingPool.sol#41-47) ignores return value by IERC20(_stakingToken).transferFrom(user,address(this),amount) (contracts/extensions/WithStakingPool.sol#43)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-transfer[0m
 INFO:Detectors:[93m
 Reentrancy in StartFiStakes.emergencyWithdraw(uint256[]) (contracts/StartFiStakes.sol#155-168):
@@ -210,15 +211,38 @@ Reentrancy in StartFiStakes.emergencyWithdraw(uint256[]) (contracts/StartFiStake
 		- IERC20(_stakingToken).transfer(to,amount) (contracts/StartFiStakes.sol#123)
 	State variables written after the call(s):
 	- stakerTotalStakes[_msgSender()] = stakerTotalStakes[_msgSender()] - withdrawnAmount (contracts/StartFiStakes.sol#165)
-Reentrancy in StartfiIDO.mint(uint256,uint256[]) (contracts/StartfiIDO.sol#74-100):
+Reentrancy in AirdropedStartfiIDO.mint(uint256,uint256[]) (contracts/AirdropedStartfiIDO.sol#72-99):
 	External calls:
-	- totalStakesForGivenIndexes = stakes.validateStakes(_msgSender(),proofIndexes) (contracts/StartfiIDO.sol#86)
-	- require(bool,string)(_transferPayment(_msgSender(),_price),Payment failed) (contracts/StartfiIDO.sol#98)
+	- totalStakesForGivenIndexes = stakes.validateStakes(_msgSender(),proofIndexes) (contracts/AirdropedStartfiIDO.sol#84)
+	- require(bool,string)(_transferPayment(_msgSender(),_price),Payment failed) (contracts/AirdropedStartfiIDO.sol#96)
 		- _erc20Token.transferFrom(sender,address(this),amount) (contracts/extensions/WithTokenPayment.sol#60)
-	- require(bool,string)(_transferToken(_msgSender(),tokenAmount),transfer token failed) (contracts/StartfiIDO.sol#99)
+	State variables written after the call(s):
+	- _increase(tokenAmount) (contracts/AirdropedStartfiIDO.sol#97)
+		- _tokenCount += amount (contracts/extensions/WithLimitedSupply.sol#61)
+Reentrancy in AirdropedStartfiIDOWithStaking.mint(uint256) (contracts/AirdropedStartfiIDOWithStaking.sol#66-91):
+	External calls:
+	- require(bool,string)(_transferPayment(_msgSender(),_price),Payment failed) (contracts/AirdropedStartfiIDOWithStaking.sol#88)
+		- _erc20Token.transferFrom(sender,address(this),amount) (contracts/extensions/WithTokenPayment.sol#60)
+	State variables written after the call(s):
+	- _increase(tokenAmount) (contracts/AirdropedStartfiIDOWithStaking.sol#89)
+		- _tokenCount += amount (contracts/extensions/WithLimitedSupply.sol#61)
+Reentrancy in StartfiIDO.mint(uint256,uint256[]) (contracts/StartfiIDO.sol#75-102):
+	External calls:
+	- totalStakesForGivenIndexes = stakes.validateStakes(_msgSender(),proofIndexes) (contracts/StartfiIDO.sol#87)
+	- require(bool,string)(_transferPayment(_msgSender(),_price),Payment failed) (contracts/StartfiIDO.sol#99)
+		- _erc20Token.transferFrom(sender,address(this),amount) (contracts/extensions/WithTokenPayment.sol#60)
+	State variables written after the call(s):
+	- _increase(tokenAmount) (contracts/StartfiIDO.sol#100)
+		- _tokenCount += amount (contracts/extensions/WithLimitedSupply.sol#61)
+Reentrancy in StartfiIDO.mint(uint256,uint256[]) (contracts/StartfiIDO.sol#75-102):
+	External calls:
+	- totalStakesForGivenIndexes = stakes.validateStakes(_msgSender(),proofIndexes) (contracts/StartfiIDO.sol#87)
+	- require(bool,string)(_transferPayment(_msgSender(),_price),Payment failed) (contracts/StartfiIDO.sol#99)
+		- _erc20Token.transferFrom(sender,address(this),amount) (contracts/extensions/WithTokenPayment.sol#60)
+	- require(bool,string)(_transferToken(_msgSender(),tokenAmount),transfer token failed) (contracts/StartfiIDO.sol#101)
 		- _erc20Token.transfer(sender,amount) (contracts/extensions/WithMintedERC20.sol#40)
 	State variables written after the call(s):
-	- require(bool,string)(_transferToken(_msgSender(),tokenAmount),transfer token failed) (contracts/StartfiIDO.sol#99)
+	- require(bool,string)(_transferToken(_msgSender(),tokenAmount),transfer token failed) (contracts/StartfiIDO.sol#101)
 		- _status = _ENTERED (node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol#54)
 		- _status = _NOT_ENTERED (node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol#60)
 Reentrancy in StartFiStakes.withdraw(uint256,uint256[]) (contracts/StartFiStakes.sol#127-153):
@@ -253,21 +277,38 @@ AnyERC20.constructor(string,string,uint256,address).symbol (contracts/test-suppl
 	- IERC20Metadata.symbol() (node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol#21) (function)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing[0m
 INFO:Detectors:[92m
+Reentrancy in WithStakingPool._deposit(address,uint256) (contracts/extensions/WithStakingPool.sol#41-47):
+	External calls:
+	- IERC20(_stakingToken).transferFrom(user,address(this),amount) (contracts/extensions/WithStakingPool.sol#43)
+	State variables written after the call(s):
+	- stakerTimestamp[user] = block.timestamp (contracts/extensions/WithStakingPool.sol#45)
+	- stakerTotalStakes[user] += amount (contracts/extensions/WithStakingPool.sol#44)
 Reentrancy in StartFiStakes.deposit(address,uint256) (contracts/StartFiStakes.sol#93-100):
 	External calls:
 	- IERC20(_stakingToken).transferFrom(_msgSender(),address(this),amount) (contracts/StartFiStakes.sol#95)
 	State variables written after the call(s):
 	- stakerPools[user].push(userPools(amount,block.timestamp,false)) (contracts/StartFiStakes.sol#96)
 	- stakerTotalStakes[user] += amount (contracts/StartFiStakes.sol#97)
-Reentrancy in StartfiIDO.mint(uint256,uint256[]) (contracts/StartfiIDO.sol#74-100):
+Reentrancy in StartfiIDO.mint(uint256,uint256[]) (contracts/StartfiIDO.sol#75-102):
 	External calls:
-	- totalStakesForGivenIndexes = stakes.validateStakes(_msgSender(),proofIndexes) (contracts/StartfiIDO.sol#86)
+	- totalStakesForGivenIndexes = stakes.validateStakes(_msgSender(),proofIndexes) (contracts/StartfiIDO.sol#87)
 	State variables written after the call(s):
-	- require(bool,string)(tokenAmount <= _balance(),Insufficient contract balance) (contracts/StartfiIDO.sol#96)
+	- require(bool,string)(tokenAmount <= _balance(),Insufficient contract balance) (contracts/StartfiIDO.sol#97)
 		- _status = _ENTERED (node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol#54)
 		- _status = _NOT_ENTERED (node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol#60)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2[0m
 INFO:Detectors:[92m
+Reentrancy in WithStakingPool._deposit(address,uint256) (contracts/extensions/WithStakingPool.sol#41-47):
+	External calls:
+	- IERC20(_stakingToken).transferFrom(user,address(this),amount) (contracts/extensions/WithStakingPool.sol#43)
+	Event emitted after the call(s):
+	- DepositFunds(user,amount) (contracts/extensions/WithStakingPool.sol#46)
+Reentrancy in WithStakingPool._unstake(address,uint256) (contracts/extensions/WithStakingPool.sol#54-63):
+	External calls:
+	- _safeTokenTransfer(user,amount) (contracts/extensions/WithStakingPool.sol#60)
+		- IERC20(_stakingToken).transfer(to,amount) (contracts/extensions/WithStakingPool.sol#50)
+	Event emitted after the call(s):
+	- WithdrawFunds(user,amount) (contracts/extensions/WithStakingPool.sol#62)
 Reentrancy in StartFiStakes.deposit(address,uint256) (contracts/StartFiStakes.sol#93-100):
 	External calls:
 	- IERC20(_stakingToken).transferFrom(_msgSender(),address(this),amount) (contracts/StartFiStakes.sol#95)
@@ -279,6 +320,19 @@ Reentrancy in StartFiStakes.emergencyWithdraw(uint256[]) (contracts/StartFiStake
 		- IERC20(_stakingToken).transfer(to,amount) (contracts/StartFiStakes.sol#123)
 	Event emitted after the call(s):
 	- WithdrawFunds(_msgSender(),withdrawnAmount) (contracts/StartFiStakes.sol#167)
+Reentrancy in AirdropedStartfiIDO.mint(uint256,uint256[]) (contracts/AirdropedStartfiIDO.sol#72-99):
+	External calls:
+	- totalStakesForGivenIndexes = stakes.validateStakes(_msgSender(),proofIndexes) (contracts/AirdropedStartfiIDO.sol#84)
+	- require(bool,string)(_transferPayment(_msgSender(),_price),Payment failed) (contracts/AirdropedStartfiIDO.sol#96)
+		- _erc20Token.transferFrom(sender,address(this),amount) (contracts/extensions/WithTokenPayment.sol#60)
+	Event emitted after the call(s):
+	- AirDropRequested(_msgSender(),tokenAmount,_price) (contracts/AirdropedStartfiIDO.sol#98)
+Reentrancy in AirdropedStartfiIDOWithStaking.mint(uint256) (contracts/AirdropedStartfiIDOWithStaking.sol#66-91):
+	External calls:
+	- require(bool,string)(_transferPayment(_msgSender(),_price),Payment failed) (contracts/AirdropedStartfiIDOWithStaking.sol#88)
+		- _erc20Token.transferFrom(sender,address(this),amount) (contracts/extensions/WithTokenPayment.sol#60)
+	Event emitted after the call(s):
+	- AirDropRequested(_msgSender(),tokenAmount,_price) (contracts/AirdropedStartfiIDOWithStaking.sol#90)
 Reentrancy in StartFiStakes.withdraw(uint256,uint256[]) (contracts/StartFiStakes.sol#127-153):
 	External calls:
 	- _safeTokenTransfer(_msgSender(),amount) (contracts/StartFiStakes.sol#149)
@@ -296,6 +350,9 @@ StartFiStakes.withdraw(uint256,uint256[]) (contracts/StartFiStakes.sol#127-153) 
 StartFiStakes.getUserPoolDetails(address,uint256) (contracts/StartFiStakes.sol#193-205) uses timestamp for comparisons
 	Dangerous comparisons:
 	- unlocked = stakerPools[_user][index].registerBlock + _lockDuration <= block.timestamp (contracts/StartFiStakes.sol#203)
+WithStakingPool.isUnLockedFund(address) (contracts/extensions/WithStakingPool.sol#84-86) uses timestamp for comparisons
+	Dangerous comparisons:
+	- stakerTimestamp[user] + _lockDuration <= block.timestamp (contracts/extensions/WithStakingPool.sol#85)
 WithStartTime._setSaleStartTime(uint256) (contracts/extensions/WithStartTime.sol#26-29) uses timestamp for comparisons
 	Dangerous comparisons:
 	- require(bool,string)(_startTime > block.timestamp,Can not set time back) (contracts/extensions/WithStartTime.sol#27)
@@ -338,12 +395,16 @@ Different versions of Solidity is used:
 	- ^0.8.0 (node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol#3)
 	- ^0.8.0 (node_modules/@openzeppelin/contracts/utils/structs/EnumerableMap.sol#3)
 	- ^0.8.0 (node_modules/@openzeppelin/contracts/utils/structs/EnumerableSet.sol#3)
+	- 0.8.4 (contracts/AirdropedStartfiIDO.sol#1)
+	- 0.8.4 (contracts/AirdropedStartfiIDOWithStaking.sol#1)
 	- 0.8.4 (contracts/StartFiStakes.sol#3)
 	- 0.8.4 (contracts/StartfiIDO.sol#1)
 	- 0.8.4 (contracts/extensions/PausableERC20.sol#1)
+	- 0.8.4 (contracts/extensions/WithAllocation.sol#3)
 	- 0.8.4 (contracts/extensions/WithEthPayment.sol#1)
 	- 0.8.4 (contracts/extensions/WithLimitedSupply.sol#2)
 	- 0.8.4 (contracts/extensions/WithMintedERC20.sol#1)
+	- 0.8.4 (contracts/extensions/WithStakingPool.sol#3)
 	- 0.8.4 (contracts/extensions/WithStartTime.sol#2)
 	- 0.8.4 (contracts/extensions/WithTokenPayment.sol#1)
 	- 0.8.4 (contracts/extensions/WithWhiteListSupport.sol#2)
@@ -353,14 +414,27 @@ Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#differe
 INFO:Detectors:[92m
 WithEthPayment._setMintPrice(uint256) (contracts/extensions/WithEthPayment.sol#72-76) is never used and should be removed
 WithEthPayment._withdraw() (contracts/extensions/WithEthPayment.sol#63-70) is never used and should be removed
-WithLimitedSupply.nextToken() (contracts/extensions/WithLimitedSupply.sol#60-66) is never used and should be removed
 WithTokenPayment.getBalanceOf(address) (contracts/extensions/WithTokenPayment.sol#67-69) is never used and should be removed
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code[0m
 INFO:Detectors:[92m
-StartfiIDO.level2Max (contracts/StartfiIDO.sol#40) is set pre-construction with a non-constant function or state variable:
-	- level1Max * 3
-StartfiIDO.level3Max (contracts/StartfiIDO.sol#41) is set pre-construction with a non-constant function or state variable:
-	- level1Max * 6
+AirdropedStartfiIDO._level1Max (contracts/AirdropedStartfiIDO.sol#38) is set pre-construction with a non-constant function or state variable:
+	- _baseAllocation * 1
+AirdropedStartfiIDO._level2Max (contracts/AirdropedStartfiIDO.sol#39) is set pre-construction with a non-constant function or state variable:
+	- _baseAllocation * 3
+AirdropedStartfiIDO._level3Max (contracts/AirdropedStartfiIDO.sol#40) is set pre-construction with a non-constant function or state variable:
+	- _baseAllocation * 6
+StartfiIDO._level1Max (contracts/StartfiIDO.sol#40) is set pre-construction with a non-constant function or state variable:
+	- _baseAllocation * 1
+StartfiIDO._level2Max (contracts/StartfiIDO.sol#41) is set pre-construction with a non-constant function or state variable:
+	- _baseAllocation * 3
+StartfiIDO._level3Max (contracts/StartfiIDO.sol#42) is set pre-construction with a non-constant function or state variable:
+	- _baseAllocation * 6
+WithAllocation._level1Max (contracts/extensions/WithAllocation.sol#17) is set pre-construction with a non-constant function or state variable:
+	- _baseAllocation * 1
+WithAllocation._level2Max (contracts/extensions/WithAllocation.sol#18) is set pre-construction with a non-constant function or state variable:
+	- _baseAllocation * 3
+WithAllocation._level3Max (contracts/extensions/WithAllocation.sol#19) is set pre-construction with a non-constant function or state variable:
+	- _baseAllocation * 6
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#function-initializing-state-variables[0m
 INFO:Detectors:[92m
 Pragma version^0.8.0 (node_modules/@openzeppelin/contracts/access/AccessControl.sol#3) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
@@ -384,12 +458,16 @@ Pragma version^0.8.0 (node_modules/@openzeppelin/contracts/utils/introspection/E
 Pragma version^0.8.0 (node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol#3) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version^0.8.0 (node_modules/@openzeppelin/contracts/utils/structs/EnumerableMap.sol#3) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version^0.8.0 (node_modules/@openzeppelin/contracts/utils/structs/EnumerableSet.sol#3) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
+Pragma version0.8.4 (contracts/AirdropedStartfiIDO.sol#1) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
+Pragma version0.8.4 (contracts/AirdropedStartfiIDOWithStaking.sol#1) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version0.8.4 (contracts/StartFiStakes.sol#3) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version0.8.4 (contracts/StartfiIDO.sol#1) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version0.8.4 (contracts/extensions/PausableERC20.sol#1) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
+Pragma version0.8.4 (contracts/extensions/WithAllocation.sol#3) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version0.8.4 (contracts/extensions/WithEthPayment.sol#1) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version0.8.4 (contracts/extensions/WithLimitedSupply.sol#2) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version0.8.4 (contracts/extensions/WithMintedERC20.sol#1) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
+Pragma version0.8.4 (contracts/extensions/WithStakingPool.sol#3) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version0.8.4 (contracts/extensions/WithStartTime.sol#2) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version0.8.4 (contracts/extensions/WithTokenPayment.sol#1) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
 Pragma version0.8.4 (contracts/extensions/WithWhiteListSupport.sol#2) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
@@ -426,32 +504,74 @@ INFO:Detectors:[92m
 StartFiStakes (contracts/StartFiStakes.sol#17-210) should inherit from IStartFiStakes (contracts/interface/IStartFiStakes.sol#12-30)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-inheritance[0m
 INFO:Detectors:[92m
+Parameter AirdropedStartfiIDO.mint(uint256,uint256[])._amount (contracts/AirdropedStartfiIDO.sol#72) is not in mixedCase
+Parameter AirdropedStartfiIDO.updateSaleStartTime(uint256)._startTime (contracts/AirdropedStartfiIDO.sol#104) is not in mixedCase
+Function AirdropedStartfiIDO.update_levelsAllocation(uint256) (contracts/AirdropedStartfiIDO.sol#108-111) is not in mixedCase
+Parameter AirdropedStartfiIDO.setWhiteList(address[])._list (contracts/AirdropedStartfiIDO.sol#129) is not in mixedCase
+Variable AirdropedStartfiIDO._level1 (contracts/AirdropedStartfiIDO.sol#35) is not in mixedCase
+Variable AirdropedStartfiIDO._level2 (contracts/AirdropedStartfiIDO.sol#36) is not in mixedCase
+Variable AirdropedStartfiIDO._level3 (contracts/AirdropedStartfiIDO.sol#37) is not in mixedCase
+Variable AirdropedStartfiIDO._level1Max (contracts/AirdropedStartfiIDO.sol#38) is not in mixedCase
+Variable AirdropedStartfiIDO._level2Max (contracts/AirdropedStartfiIDO.sol#39) is not in mixedCase
+Variable AirdropedStartfiIDO._level3Max (contracts/AirdropedStartfiIDO.sol#40) is not in mixedCase
+Parameter AirdropedStartfiIDOWithStaking.mint(uint256)._amount (contracts/AirdropedStartfiIDOWithStaking.sol#66) is not in mixedCase
+Parameter AirdropedStartfiIDOWithStaking.updateSaleStartTime(uint256)._startTime (contracts/AirdropedStartfiIDOWithStaking.sol#96) is not in mixedCase
+Parameter AirdropedStartfiIDOWithStaking.updateLockDuration(uint256)._duration (contracts/AirdropedStartfiIDOWithStaking.sol#116) is not in mixedCase
+Parameter AirdropedStartfiIDOWithStaking.setWhiteList(address[])._list (contracts/AirdropedStartfiIDOWithStaking.sol#124) is not in mixedCase
 Struct StartFiStakes.userPools (contracts/StartFiStakes.sol#24-28) is not in CapWords
 Parameter StartFiStakes.updateLockDuration(uint256)._duration (contracts/StartFiStakes.sol#170) is not in mixedCase
 Parameter StartFiStakes.getReserves(address)._owner (contracts/StartFiStakes.sol#177) is not in mixedCase
 Parameter StartFiStakes.getUserPoolLenght(address)._user (contracts/StartFiStakes.sol#181) is not in mixedCase
 Parameter StartFiStakes.getUserPoolDetails(address,uint256)._user (contracts/StartFiStakes.sol#193) is not in mixedCase
-Parameter StartfiIDO.mint(uint256,uint256[])._amount (contracts/StartfiIDO.sol#74) is not in mixedCase
-Parameter StartfiIDO.updateSaleStartTime(uint256)._startTime (contracts/StartfiIDO.sol#105) is not in mixedCase
-Parameter StartfiIDO.setWhiteList(address[])._list (contracts/StartfiIDO.sol#125) is not in mixedCase
+Parameter StartfiIDO.mint(uint256,uint256[])._amount (contracts/StartfiIDO.sol#75) is not in mixedCase
+Parameter StartfiIDO.updateSaleStartTime(uint256)._startTime (contracts/StartfiIDO.sol#107) is not in mixedCase
+Function StartfiIDO.update_levelsAllocation(uint256) (contracts/StartfiIDO.sol#111-114) is not in mixedCase
+Parameter StartfiIDO.setWhiteList(address[])._list (contracts/StartfiIDO.sol#132) is not in mixedCase
+Variable StartfiIDO._level1 (contracts/StartfiIDO.sol#37) is not in mixedCase
+Variable StartfiIDO._level2 (contracts/StartfiIDO.sol#38) is not in mixedCase
+Variable StartfiIDO._level3 (contracts/StartfiIDO.sol#39) is not in mixedCase
+Variable StartfiIDO._level1Max (contracts/StartfiIDO.sol#40) is not in mixedCase
+Variable StartfiIDO._level2Max (contracts/StartfiIDO.sol#41) is not in mixedCase
+Variable StartfiIDO._level3Max (contracts/StartfiIDO.sol#42) is not in mixedCase
+Variable WithAllocation._level1 (contracts/extensions/WithAllocation.sol#14) is not in mixedCase
+Variable WithAllocation._level2 (contracts/extensions/WithAllocation.sol#15) is not in mixedCase
+Variable WithAllocation._level3 (contracts/extensions/WithAllocation.sol#16) is not in mixedCase
+Variable WithAllocation._level1Max (contracts/extensions/WithAllocation.sol#17) is not in mixedCase
+Variable WithAllocation._level2Max (contracts/extensions/WithAllocation.sol#18) is not in mixedCase
+Variable WithAllocation._level3Max (contracts/extensions/WithAllocation.sol#19) is not in mixedCase
+Parameter WithStakingPool.getReserves(address)._owner (contracts/extensions/WithStakingPool.sol#72) is not in mixedCase
 Parameter WithWhiteListSupport.isWhiteListed(address)._beneficiary (contracts/extensions/WithWhiteListSupport.sol#31) is not in mixedCase
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions[0m
 INFO:Detectors:[92m
+Variable AirdropedStartfiIDO._baseAllocation (contracts/AirdropedStartfiIDO.sol#34) is too similar to AirdropedStartfiIDO.update_levelsAllocation(uint256).baseAllocation_ (contracts/AirdropedStartfiIDO.sol#108)
+Variable WithStartTime._startTimeSale (contracts/extensions/WithStartTime.sol#6) is too similar to AirdropedStartfiIDO.constructor(uint256,uint256,uint256,address[],address,address,address).startTimeSale_ (contracts/AirdropedStartfiIDO.sol#46)
+Variable WithAllocation._baseAllocation (contracts/extensions/WithAllocation.sol#13) is too similar to WithAllocation._updatelevelsAllocation(uint256).baseAllocation_ (contracts/extensions/WithAllocation.sol#21)
+Variable WithAllocation._baseAllocation (contracts/extensions/WithAllocation.sol#13) is too similar to AirdropedStartfiIDOWithStaking.updatelevelsAllocation(uint256).baseAllocation_ (contracts/AirdropedStartfiIDOWithStaking.sol#100)
+Variable WithStakingPool._lockDuration (contracts/extensions/WithStakingPool.sol#17) is too similar to WithStakingPool.constructor(address,uint256).lockDuration_ (contracts/extensions/WithStakingPool.sol#32)
+Variable WithStakingPool._lockDuration (contracts/extensions/WithStakingPool.sol#17) is too similar to AirdropedStartfiIDOWithStaking.constructor(uint256,uint256,uint256,uint256,address[],address,address,address).lockDuration_ (contracts/AirdropedStartfiIDOWithStaking.sol#44)
+Variable WithStartTime._startTimeSale (contracts/extensions/WithStartTime.sol#6) is too similar to AirdropedStartfiIDOWithStaking.constructor(uint256,uint256,uint256,uint256,address[],address,address,address).startTimeSale_ (contracts/AirdropedStartfiIDOWithStaking.sol#41)
 Variable StartFiStakes._lockDuration (contracts/StartFiStakes.sol#19) is too similar to StartFiStakes.constructor(address,address,uint256).lockDuration_ (contracts/StartFiStakes.sol#54)
-Variable WithStartTime._startTimeSale (contracts/extensions/WithStartTime.sol#6) is too similar to StartfiIDO.constructor(uint256,uint256,uint256,address[],address,address,address,address).startTimeSale_ (contracts/StartfiIDO.sol#46)
+Variable WithStartTime._startTimeSale (contracts/extensions/WithStartTime.sol#6) is too similar to StartfiIDO.constructor(uint256,uint256,uint256,address[],address,address,address,address).startTimeSale_ (contracts/StartfiIDO.sol#47)
+Variable StartfiIDO._baseAllocation (contracts/StartfiIDO.sol#36) is too similar to StartfiIDO.update_levelsAllocation(uint256).baseAllocation_ (contracts/StartfiIDO.sol#111)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-are-too-similar[0m
 INFO:Detectors:[92m
-StartfiIDO.slitherConstructorVariables() (contracts/StartfiIDO.sol#24-128) uses literals with too many digits:
-	- level1Max = 500000 * 1000000000000000000 (contracts/StartfiIDO.sol#39)
+AirdropedStartfiIDO.slitherConstructorVariables() (contracts/AirdropedStartfiIDO.sol#23-148) uses literals with too many digits:
+	- _baseAllocation = 500000 * 1000000000000000000 (contracts/AirdropedStartfiIDO.sol#34)
+AirdropedStartfiIDOWithStaking.slitherConstructorVariables() (contracts/AirdropedStartfiIDOWithStaking.sol#23-150) uses literals with too many digits:
+	- _baseAllocation = 500000 * 1000000000000000000 (contracts/extensions/WithAllocation.sol#13)
+StartfiIDO.slitherConstructorVariables() (contracts/StartfiIDO.sol#24-151) uses literals with too many digits:
+	- _baseAllocation = 500000 * 1000000000000000000 (contracts/StartfiIDO.sol#36)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits[0m
 INFO:Detectors:[92m
-StartfiIDO.level3 (contracts/StartfiIDO.sol#38) is never used in StartfiIDO (contracts/StartfiIDO.sol#24-128)
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variables[0m
-INFO:Detectors:[92m
-StartfiIDO.level1 (contracts/StartfiIDO.sol#36) should be constant
-StartfiIDO.level1Max (contracts/StartfiIDO.sol#39) should be constant
-StartfiIDO.level2 (contracts/StartfiIDO.sol#37) should be constant
-StartfiIDO.level3 (contracts/StartfiIDO.sol#38) should be constant
+AirdropedStartfiIDO._level1 (contracts/AirdropedStartfiIDO.sol#35) should be constant
+AirdropedStartfiIDO._level2 (contracts/AirdropedStartfiIDO.sol#36) should be constant
+AirdropedStartfiIDO._level3 (contracts/AirdropedStartfiIDO.sol#37) should be constant
+StartfiIDO._level1 (contracts/StartfiIDO.sol#37) should be constant
+StartfiIDO._level2 (contracts/StartfiIDO.sol#38) should be constant
+StartfiIDO._level3 (contracts/StartfiIDO.sol#39) should be constant
+WithAllocation._level1 (contracts/extensions/WithAllocation.sol#14) should be constant
+WithAllocation._level2 (contracts/extensions/WithAllocation.sol#15) should be constant
+WithAllocation._level3 (contracts/extensions/WithAllocation.sol#16) should be constant
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant[0m
 INFO:Detectors:[92m
 getRoleMember(bytes32,uint256) should be declared external:
@@ -491,5 +611,5 @@ INFO:Detectors:[92m
 transferOwnership(address) should be declared external:
 	- Ownable.transferOwnership(address) (node_modules/@openzeppelin/contracts/access/Ownable.sol#61-64)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external[0m
-INFO:Slither:. analyzed (55 contracts with 75 detectors), 111 result(s) found
+INFO:Slither:. analyzed (59 contracts with 75 detectors), 173 result(s) found
 INFO:Slither:[94mUse https://crytic.io/ to get access to additional detectors and Github integration[0m

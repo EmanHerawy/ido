@@ -17,7 +17,7 @@ contract WithStakingPool is ReentrancyGuard {
     uint256 private _lockDuration;
     address private _stakingToken;
 
-    mapping(address => uint256) stakerTotalStakes;
+    mapping(address => uint256) internal stakerTotalStakes;
     mapping(address => uint256) stakerTimestamp;
     /******************************************* modifiers go here ********************************************************* */
 
@@ -63,7 +63,7 @@ contract WithStakingPool is ReentrancyGuard {
     }
 
     function _updateLockDuration(uint256 _duration) internal {
-        require(_duration > 1 days, 'Lock time must not be less than a day');
+        require(_duration >0, 'Lock time must not be less than zero');
         _lockDuration = _duration;
         emit ChangeLockDuration(_duration);
     }
