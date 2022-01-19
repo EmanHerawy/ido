@@ -19,7 +19,7 @@ import './extensions/PausableERC20.sol';
 import './extensions/WithWhiteListSupport.sol';
 import './extensions/WithAllocation.sol';
 import './extensions/WithStakingPool.sol';
- 
+
 contract AirdropedStartfiIDOWithStaking is
     WithWhiteListSupport,
     WithAllocation,
@@ -30,8 +30,8 @@ contract AirdropedStartfiIDOWithStaking is
     WithTokenPayment
 {
     /**************************libraries ********** */
- 
-     /***************************Declarations go here ********** */
+
+    /***************************Declarations go here ********** */
 
     event AirDropRequested(address beneficiary, uint256 amount, uint256 price);
 
@@ -70,7 +70,7 @@ contract AirdropedStartfiIDOWithStaking is
         // get max amount user can buy
         require(_amount > 0, 'invalid_amount');
         uint256 tokenAmount;
-        uint256 userTotalAllocation= _userAllocation[_msgSender()]+_amount;
+        uint256 userTotalAllocation = _userAllocation[_msgSender()] + _amount;
 
         uint256 totalStakesForGivenIndexes = getReserves(_msgSender());
 
@@ -78,18 +78,18 @@ contract AirdropedStartfiIDOWithStaking is
         require(isUnLockedFund(_msgSender()), 'Please wait for lock time end');
 
         if (totalStakesForGivenIndexes <= _level1) {
-            tokenAmount = userTotalAllocation > _level1Max ? _level1Max -_userAllocation[_msgSender()] : _amount;
+            tokenAmount = userTotalAllocation > _level1Max ? _level1Max - _userAllocation[_msgSender()] : _amount;
         } else if (totalStakesForGivenIndexes <= _level2) {
-            tokenAmount = userTotalAllocation > _level2Max ? _level2Max -_userAllocation[_msgSender()]: _amount;
+            tokenAmount = userTotalAllocation > _level2Max ? _level2Max - _userAllocation[_msgSender()] : _amount;
         } else {
-            tokenAmount = userTotalAllocation > _level3Max ? _level3Max-_userAllocation[_msgSender()] : _amount;
+            tokenAmount = userTotalAllocation > _level3Max ? _level3Max - _userAllocation[_msgSender()] : _amount;
         }
-        uint256 _price = (tokenAmount*mintPrice()) / 1 ether ;
+        uint256 _price = (tokenAmount * mintPrice()) / 1 ether;
         require(tokenAmount <= availableTokenCount(), 'Insufficient contract balance');
         require(_price <= _getAllowance(_msgSender()), 'Insufficient price value');
         require(_transferPayment(_msgSender(), _price), 'Payment failed');
         _increase(tokenAmount);
-        _userAllocation[_msgSender()]+=tokenAmount;
+        _userAllocation[_msgSender()] += tokenAmount;
         emit AirDropRequested(_msgSender(), tokenAmount, _price);
     }
 

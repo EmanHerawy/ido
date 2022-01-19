@@ -17,7 +17,8 @@ contract WithAllocation {
     uint256 internal _level1Max = _baseAllocation;
     uint256 internal _level2Max = _baseAllocation * 3;
     uint256 internal _level3Max = _baseAllocation * 6;
-mapping (address=>uint256)  internal _userAllocation;
+    mapping(address => uint256) internal _userAllocation;
+
     function _updatelevelsAllocation(uint256 baseAllocation_) internal {
         require(baseAllocation_ != 0, 'Zero value is not accepted');
         _baseAllocation = baseAllocation_;
@@ -38,7 +39,8 @@ mapping (address=>uint256)  internal _userAllocation;
     function level3() external view returns (uint256, uint256) {
         return (_level3, _level3Max);
     }
-    function userAllocation(address user) view external returns (uint256) {
-     return _userAllocation[user];   
+
+    function userAllocation(address user) external view returns (uint256) {
+        return _userAllocation[user];
     }
 }
