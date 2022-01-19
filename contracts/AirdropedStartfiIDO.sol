@@ -32,7 +32,7 @@ contract AirdropedStartfiIDO is
     /***************************Declarations go here ********** */
     IStartFiStakes stakes;
     uint256 private _baseAllocation = 500000 * 1 ether;
-    uint256 _level1 = 2700 * 1 ether;
+    uint256 _level1 = 270 * 1 ether;
     uint256 _level2 = 7000 * 1 ether;
     uint256 _level3 = 14000 * 1 ether;
     uint256 _level1Max = _baseAllocation * 1;
