@@ -55,7 +55,7 @@ contract WithStakingPool is ReentrancyGuard {
         // TODO:check marketplace user reserves
         require(stakerTotalStakes[user] >= amount, 'Invalid amount');
 
-        stakerTotalStakes[user] = 0;
+        stakerTotalStakes[user] -= amount;
 
         _safeTokenTransfer(user, amount);
 
