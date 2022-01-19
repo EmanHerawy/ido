@@ -20,7 +20,11 @@ import './extensions/WithWhiteListSupport.sol';
 import './extensions/WithAllocation.sol';
 import './extensions/WithStakingPool.sol';
 
-contract AirdropedStartfiIDOWithStaking is
+interface IStartfiIDO {
+    function unstakeBatch(address[] memory users) external;
+}
+
+contract AirdropedStartfiIDOWithStakingMigrated is
     WithWhiteListSupport,
     WithAllocation,
     WithLimitedSupply,
@@ -32,7 +36,11 @@ contract AirdropedStartfiIDOWithStaking is
     /**************************libraries ********** */
 
     /***************************Declarations go here ********** */
+    IStartfiIDO _idoMigrated;
+    mapping(address => uint256) public migrateStaker;
+    mapping(address => bool) public isMigratedStaker;
     event AirDropRequested(address beneficiary, uint256 amount, uint256 price);
+    event stakerMigrated(address beneficiary, uint256 amount);
 
     // modifier
     /******************************************* constructor goes here ********************************************************* */
@@ -124,6 +132,11 @@ contract AirdropedStartfiIDOWithStaking is
         _setWhiteList(_list);
     }
 
+    function setMigratedIDO(address idoMigrated) external onlyOwner {
+        require(idoMigrated != address(0), 'Zero address is not allowed');
+        _idoMigrated = IStartfiIDO(idoMigrated);
+    }
+
     // deposit
     function deposit(uint256 amount) external whenNotPaused {
         require(amount >= _level1, 'Amount is less the minumum');
@@ -132,14 +145,35 @@ contract AirdropedStartfiIDOWithStaking is
 
     // withdraw
     function unstake(uint256 amount) external whenNotPaused {
-        require(isUnLockedFund(_msgSender()), 'Fund is locked now');
-        _unstake(_msgSender(), amount);
+        // if from list , untake from the old contract
+        if (migrateStaker[_msgSender()] > 0 && !isMigratedStaker[_msgSender()]) {
+            address[] memory stakers = new address[](1);
+            stakers[0] = _msgSender();
+
+            _idoMigrated.unstakeBatch(stakers);
+            isMigratedStaker[_msgSender()] = true;
+        } else {
+            require(isUnLockedFund(_msgSender()), 'Fund is locked now');
+            _unstake(_msgSender(), amount);
+        }
     }
 
     function unstakeBatch(address[] memory users) external onlyOwner {
         for (uint256 index = 0; index < users.length; index++) {
             require(users[index] != address(0), 'Zero Address is not allowed');
             _unstake(users[index], getReserves(users[index]));
+        }
+    }
+
+    function migrateStakers(address[] memory users, uint256[] memory amounts) external onlyOwner {
+        require(users.length == amounts.length);
+        for (uint256 index = 0; index < users.length; index++) {
+            require(users[index] != address(0), 'Zero Address is not allowed');
+            require(amounts[index] != 0, 'Zero Address is not allowed');
+            migrateStaker[users[index]] = amounts[index];
+            stakerTotalStakes[users[index]] += amounts[index];
+
+            emit stakerMigrated(users[index], amounts[index]);
         }
     }
 
