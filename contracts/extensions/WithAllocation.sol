@@ -10,7 +10,7 @@ pragma solidity 0.8.4;
 
 contract WithAllocation {
     /******************************************* decalrations go here ********************************************************* */
-    uint256 private _baseAllocation = 40 * 1 ether;
+    uint256 private _baseAllocation = 6944 * 1 ether;
     uint256 internal _level1 = 2700 * 1 ether;
     uint256 internal _level2 = 7000 * 1 ether;
     uint256 internal _level3 = 14000 * 1 ether;
