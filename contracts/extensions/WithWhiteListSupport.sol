@@ -5,7 +5,7 @@ import '@openzeppelin/contracts/utils/structs/EnumerableMap.sol';
 abstract contract WithWhiteListSupport {
     // Add the library methods
     using EnumerableSet for EnumerableSet.AddressSet;
-    bool private _whiteListEnabled = true;
+    bool private _whiteListEnabled = false;
     // Declare a set state variable
     EnumerableSet.AddressSet private _whiteList;
     event WhiteListPriceUpdated(uint256 newPrice, uint256 oldPrice);
